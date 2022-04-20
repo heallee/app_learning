@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/page_text"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:background="@color/purple_200"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:shadowColor="@color/green"-->
+    <!--        android:shadowDx="10.0"-->
+    <!--        android:shadowDy="10.0"-->
+    <!--        android:shadowRadius="3.0"-->
+    <!--        android:text="@string/page_text"-->
+    <!--        android:textColor="@color/red"-->
+    <!--        android:textSize="30dp"-->
+    <!--        android:textStyle="bold" />-->
+    <!--          button                          -->
+    <!--    <Button-->
+    <!--        android:id="@+id/button_id"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/button_clike_change"-->
+    <!--        android:backgroundTint="@color/button_color_selector"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="30dp" />-->
+
+    <!--  ==============EditText==============       -->
+    <!--    <EditText-->
+    <!--        android:id="@+id/user_account"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_person_account"-->
+    <!--        android:drawablePadding="12dp"-->
+    <!--        android:hint="please input your account"-->
+    <!--        android:padding="5dp"-->
+    <!--        android:textSize="25dp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/user_password"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_work_pwd"-->
+    <!--        android:drawablePadding="12dp"-->
+    <!--        android:hint="please input your paaword"-->
+    <!--        android:inputType="textWebPassword"-->
+    <!--        android:padding="5dp"-->
+    <!--        android:textSize="25dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/user_login"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:background="@color/blue"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="2dp"-->
+    <!--        android:text="login" />-->
+
+
+    <!--   ==============progress============================     -->
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar_barid"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+    <!--    <Button-->
+    <!--        android:id="@+id/progressBar_btn"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:background="@color/blue"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="2dp"-->
+    <!--        android:text="display progessBar"-->
+    <!--        android:onClick="bar_display_change"/>-->
+    <!--    <ProgressBar-->
+    <!--        style="?android:attr/progressBarStyleHorizontal"-->
+    <!--        android:max="100"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:indeterminate="true"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <!--      ==============  Notification==============                       -->
+    <!--    <Button-->
+    <!--        android:text="send notify"-->
+    <!--        android:textColor="@color/green"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:onClick="send_notification"/>-->
+    <!--    <Button-->
+    <!--        android:text="clear notify"-->
+    <!--        android:textColor="@color/red"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:onClick="clear_notification"/>-->
+
+    <!--    ================Toolbar==========================  -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_west_back"
+        android:onClick="back_to_prepage">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowRadius="3.0"
+            android:text="menu"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

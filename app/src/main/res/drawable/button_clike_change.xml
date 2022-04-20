@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable [可绘制的] 可以根据不同状态设定背景图片-->
+<!--与layout/activity_main.xml中的button-background关联-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_baseline_check_right" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_baseline_check_box_fullright" />
+</selector>
