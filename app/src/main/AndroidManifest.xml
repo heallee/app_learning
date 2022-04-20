@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.firstappv1">
 
     <application
@@ -19,6 +20,7 @@
             </intent-filter>
         </activity>
         <!--   组件必须在清单中注册     -->
+        <activity android:name=".ToolbarActivity"/>
         <activity android:name=".NotifyActivity"/>
     </application>
 

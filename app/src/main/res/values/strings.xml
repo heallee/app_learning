@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">FirstAppv1</string>
     <string name="page_text">This change by strings.xml</string>
+    <string name="login_username">please input your username</string>
+    <string name="login_password">please input your password</string>
+    <string name="login_btn">login</string>
+    <string name="toolbar_back_string">menu</string>
 </resources>

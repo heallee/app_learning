@@ -1,37 +1,22 @@
 package com.example.firstappv1;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.NotificationCompat;
 
 import android.app.Notification;
-import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.nfc.Tag;
-import android.os.Build;
 import android.os.Bundle;
-import android.text.Editable;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import com.google.android.material.tabs.TabLayout;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     //TAG那个参数只是,String类型，一般是当前页面， 是为了区分不同页面的log
-    private static final String TAG = "button_log";
-    private static final String TAGv2 = "get edit_view log by button";
-    private static final String TAGv3 = "get toolbar log by button";
+    private static final String TAG = "R.id.login_btn button_log";
+//    private static final String TAGv2 = "get edit_view log by button";
+//    private static final String TAGv3 = "get toolbar log by button";
     private ProgressBar progressBar;
     private NotificationManager manager;
     private Notification notification;
@@ -40,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Button login_btn = findViewById(R.id.login_btn);
+        login_btn.setOnClickListener(this);
 //====================通过id定位属性值，并在客户端设置新属性值=======================
 //        TextView page_text = findViewById(R.id.page_text);
 //        page_text.setText("this is change by mainactivity.java");
-//===========================================================================
+//===========================================================================d
 
 //=====================button 相关操作=======================================
 //        //获取button动作
@@ -146,10 +132,29 @@ public class MainActivity extends AppCompatActivity {
 //===========================================================================
     }
 
-    public void back_to_prepage(View view) {
-        startActivity(new Intent(this, NotifyActivity.class));
-        Log.e(TAGv2, "cilck back button");
+    //   Activity继承View.OnClickListener，由Activity实现OnClick(View view)方法，
+//   在OnClick(View view)方法中用switch-case对不同id代表的button进行相应的处理：
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.login_btn:
+                login();
+                break;
+            default:
+                break;
+        }
     }
+
+    public void login() {
+        startActivity(new Intent(this, ToolbarActivity.class));
+        Log.e(TAG,"\tstart login");
+    }
+
+
+//    public void back_to_prepage(View view) {
+//        startActivity(new Intent(this, NotifyActivity.class));
+//        Log.e(TAGv2, "cilck back button");
+//    }
 
 //    public void bar_display_change(View view) {
 //        if (progressBar.getVisibility() == View.GONE) {
@@ -168,5 +173,8 @@ public class MainActivity extends AppCompatActivity {
 //    public void clear_notification(View view) {
 //        manager.cancel(1);
 //    }
+
+// ======================login page================================
+
 
 }
