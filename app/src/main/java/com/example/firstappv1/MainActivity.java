@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //TAG那个参数只是,String类型，一般是当前页面， 是为了区分不同页面的log
     private static final String TAG = "R.id.login_btn button_log";
-//    private static final String TAGv2 = "get edit_view log by button";
+    //    private static final String TAGv2 = "get edit_view log by button";
 //    private static final String TAGv3 = "get toolbar log by button";
     private ProgressBar progressBar;
     private NotificationManager manager;
@@ -147,9 +147,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void login() {
         startActivity(new Intent(this, ToolbarActivity.class));
-        Log.e(TAG,"\tstart login");
+        Log.e(TAG, "\tstart login");
     }
-
+}
 
 //    public void back_to_prepage(View view) {
 //        startActivity(new Intent(this, NotifyActivity.class));
@@ -174,7 +174,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        manager.cancel(1);
 //    }
 
-// ======================login page================================
 
 
-}

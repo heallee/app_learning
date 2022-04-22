@@ -5,4 +5,7 @@
     <string name="login_password">please input your password</string>
     <string name="login_btn">login</string>
     <string name="toolbar_back_string">menu</string>
+    <string name="notify_send_massage_btn">send massage</string>
+    <string name="notify_clear_massage_btn">clear massage</string>
+    <string name="notify_clear_massage_build">Hello World!</string>
 </resources>
